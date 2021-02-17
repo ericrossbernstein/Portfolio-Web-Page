@@ -90,6 +90,7 @@ header nav {
 
 header nav ul {
   display: flex;
+  margin-top: 20px;
   padding-bottom: 0;
   padding-left: 0;
   list-style: none;
@@ -205,10 +206,6 @@ a:active  { color: #0011ff; }
   header nav {
     margin-top: 14px 0 14px 20px;
     padding-top: 0;
-  }
-
-  hr.narrow {
-    border: none;
   }
 
 }
