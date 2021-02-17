@@ -16,20 +16,33 @@
       <div>
         <h1>ERIC ROSS BERNSTEIN</h1>
       </div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <div>
-
         <!------------ MAIN: Intro ------------>
-        <article>
-          <img src="images/ERB-bw.jpg" width="250" class="circle" alt="Eric Ross Bernstein Portrait" />
-          <h2><em>Hi, I'm Eric Ross Bernstein</em></h2>
-          <p><strong><em>I'm an artist, designer, and web developer based in Los Angeles.</em></strong></p>
-        </article>
+        <section id="intro">
+          <div class="group">
+            <div class="item-centered">
+              <img src="images/ERB-bw.jpg" width="250px" class="circle" alt="Eric Ross Bernstein Portrait" />
+            </div>
+            <div class="item-centered item-double">
+              <h2><em>Hi, I'm Eric Ross Bernstein</em></h2>
+              <h4><strong><em>I'm an artist, designer, and web developer based in California.</em></strong></h4>
+            </div>
+          </div>
+        </section>
 
         <!----------- MAIN: About Me ----------->
-        <article>
+        <section id="about">
           <hr>
           <h3>About Me</h3>
           <hr>
@@ -37,38 +50,82 @@
           <p>After graduating with a degree in architecture from Cornell University, I co-founded the design collective <a href="https://www.hitheryon.com/" target="_blank">Hither Yon</a> in 2011. From 2012 to 2014, I worked as an architect at <a href="https://www.jeppehein.net/" target="_blank">Studio Jeppe Hein</a> in Berlin, designing various public art projects throughout Europe and the United States. I have exhibited my artwork in Berlin, New York, LA, Rome, Turin, Milan and Copenhagen, and my illustrations have been featured on <a href="https://www.booooooom.com/2020/04/23/parallels-by-illustrator-eric-ross-bernstein/" target="_blank">Booooooom</a> and <a href="https://supersonicart.com/post/624471143667089408/eric-ross-bernstein-illustrations-superb-and" target="_blank">Supersonic Art</a>.</p>
 
           <p>I'm currently studying software engineering at <a href="https://www.thinkful.com/" target="_blank">Thinkful</a>. If you're looking for a web developer with a passion for JavaScript Functions and clean, simple design, I would love to collaborate with you. I'm always in search of challenging projects that combine my interests in art, design, and web development.</p>
+        </section>
 
-          <p><em><strong>Previous Clients:</strong></em></p>
-          <ul>
-            <li>Disney</li>
-            <li>Honda</li>
-            <li>Target</li>
-            <li>Progressive</li>
-            <li>AT&T</li>
-          </ul>
-        </article>
+        <!----------- MAIN: Projects ----------->
+        <section id="projects">
+          <hr>
+          <h3>Projects</h3>
+          <hr>
+
+          <div class="group">
+            <div class="item-border">
+              <img src="images/coming-soon.jpg" alt="Coming Soon">
+              <h5>Project 1</h5>
+              <div class="links-list">
+                <a href="#"><strong>Project Link</strong></a>
+                <a href="#"><strong>GitHub Repo</strong></a>
+              </div>
+              <p class="justify"><em>Ut mei dicat aliquip, ferri noster offendit eu sea. Usu scripta impedit omnesque cu, ei vel aeque detraxit probatus. In mea natum mentitum invidunt, solet invidunt ius ad. Harum sensibus.</em><p>
+            </div>
+            <div class="item-border">
+              <img src="images/coming-soon.jpg" alt="Coming Soon">
+              <h5>Project 2</h5>
+              <div class="links-list">
+                <a href="#"><strong>Project Link</strong></a>
+                <a href="#"><strong>GitHub Repo</strong></a>
+              </div>
+              <p class="justify"><em>Ex sed modus solet, usu aliquip delenit laoreet ne. Qui et altera volutpat reprimique, meis aperiri inimicus ad sit. His id eleifend pericula. Rebum graecis nam ut, elaboraret necessitatibus ei.</em><p>
+            </div>
+            <div class="item-border">
+              <img src="images/coming-soon.jpg" alt="Coming Soon">
+              <h5>Project 3</h5>
+              <div class="links-list">
+                <a href="#"><strong>Project Link</strong></a>
+                <a href="#"><strong>GitHub Repo</strong></a>
+              </div>
+              <p class="justify"><em>Iriure civibus percipit te vel. Sit id impetus sensibus recteque, ad pro omnium consequuntur, idque quando duo ut. Est an quaeque aliquid, pri ut putant vivendo platonem. Duo quis soluta.</em><p>
+            </div>
+          </div>
+        </section>
 
         <!------------ MAIN: Contact ------------>
-        <article>
+        <section id="contact">
           <hr>
           <h3>Contact</h3>
           <hr>
 
-          <p><em><strong>Looking to collaborate? </strong></em><a href="mailto:ericrossbernstein@gmail.com" target="_blank">Email me</a> or find me online:</p>
-          <ol>
-            <li><a href="https://www.linkedin.com/in/ericrossbernstein/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/ericrossbernstein" target="_blank">GitHub</a></li>
-            <li><a href="https://www.instagram.com/ericrossbernstein/" target="_blank">Instagram</a></li>
-          </ol>
-        </article>
+          <div class="group">
+            <div class="item">
+              <p><em><strong>Looking to collaborate? </strong></em></p>
+              <p><a href="mailto:ericrossbernstein@gmail.com" target="_blank">Email me</a> or find me online:</p>
+              <ol>
+                <li><a href="https://www.linkedin.com/in/ericrossbernstein/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ericrossbernstein" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/ericrossbernstein/" target="_blank">Instagram</a></li>
+              </ol>
+            </div>
+            <div class="item item-double">
+              <form action="https://formspree.io/f/mdopvglp" method="POST">
+                <label for="user-name">Name:</label>
+                <input id="user-name" type="text" name="name">
 
-      </div>
+                <label for="user-email">Email:</label>
+                <input id="user-email" type="text" name="email">
+
+                <label for="user-message">Your message:</label>
+                <textarea id="user-message" name="message"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
     </main>
 
     <!------------ FOOTER ------------>
     <footer>
       <div>
-        <h4>© Eric Ross Bernstein</h4>
+        <h6>© Eric Ross Bernstein</h6>
       </div>
     </footer>
 
