@@ -1,6 +1,5 @@
 @import url("https://use.typekit.net/cqz5vbh.css");
 
-
 /* --------- STRUCTURE ---------- */
 
 * {
@@ -9,10 +8,11 @@
 
 body {
   margin: 10px;
-  background-color: #FFDBBD;
+  background-color: #ffdbbd;
 }
 
-header, footer {
+header,
+footer {
   border: 8px double #000000;
 }
 
@@ -23,14 +23,6 @@ main {
 
 section {
   padding: 0 20px;
-}
-
-hr {
-  height: 2px;
-  border: 1px solid #000000;
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 main img {
@@ -60,12 +52,26 @@ main img {
   margin: 20px;
 }
 
+.item-right {
+  flex: 1;
+  align-self: right;
+  margin: 20px;
+}
+
 .item-double {
   flex: 2;
 }
 
 .item-triple {
   flex: 3;
+}
+
+.divider {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .circle {
@@ -78,7 +84,6 @@ main img {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
-
 
 /* ------ NAVIGATION ------ */
 
@@ -107,10 +112,24 @@ header nav ul li:last-child a {
   margin-right: 0;
 }
 
+header a:link {
+  color: #000000;
+}
+header a:visited {
+  color: #000000;
+}
+header a:hover {
+  color: #ffffff;
+}
+header a:active {
+  color: #0011ff;
+}
 
 /* ----------- TYPOGRAPHY ----------- */
 
-h1, h5, h6 {
+h1,
+h5,
+h6 {
   color: #000000;
   font-family: "brandon-grotesque", Verdana, sans-serif;
   text-align: center;
@@ -121,10 +140,16 @@ h1 {
   font-size: 22px;
   margin: 0;
   padding: 20px 0 0 0;
+  text-transform: uppercase;
 }
 
-h2, h4, p, ul, ol, a {
-  font-family: "adobe-garamond-pro", 'Times New Roman', serif;
+h2,
+h4,
+p,
+ul,
+ol,
+a {
+  font-family: "adobe-garamond-pro", "Times New Roman", serif;
   color: #000000;
   font-weight: 400;
 }
@@ -164,7 +189,10 @@ h6 {
   font-size: 15px;
 }
 
-p, ul, ol, a {
+p,
+ul,
+ol,
+a {
   font-size: 18px;
   text-align: left;
   margin-top: 0;
@@ -174,20 +202,26 @@ p.justify {
   text-align: justify;
 }
 
-a:link    { color: #000000; }
-a:visited { color: #838383; }
-a:hover   { color: #ffffff; }
-a:active  { color: #0011ff; }
-
+a:link {
+  color: #000000;
+}
+a:visited {
+  color: #808080;
+}
+a:hover {
+  color: #ffffff;
+}
+a:active {
+  color: #0011ff;
+}
 
 /* ------------ DESKTOP ------------ */
 
 @media all and (min-width: 800px) {
-
   section {
     padding: 0 8%;
   }
-  
+
   .group {
     flex-direction: row;
   }
@@ -202,23 +236,21 @@ a:active  { color: #0011ff; }
     margin: 14px 0 14px 20px;
     padding-top: 0;
   }
-  
+
   header nav {
     margin-top: 14px 0 14px 20px;
     padding-top: 0;
   }
-
 }
-
 
 /* --------- CONTACT FORM --------- */
 
 form label {
-  font-family: "adobe-garamond-pro", 'Times New Roman', serif;
+  font-family: "adobe-garamond-pro", "Times New Roman", serif;
   font-size: 17px;
 }
 
-form input, 
+form input,
 form textarea {
   width: 100%;
   margin: 5px 0 20px 0;
