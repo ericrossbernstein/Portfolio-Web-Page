@@ -231,10 +231,10 @@ a:visited {
   color: #4b71e0;
 }
 a:hover {
-  color: #fde3cd;
+  color: #000000;
 }
 a:active {
-  color: #fde3cd;
+  color: #000000;
 }
 
 /* ------------ DESKTOP ------------ */
