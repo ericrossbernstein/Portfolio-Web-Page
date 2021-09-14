@@ -8,12 +8,12 @@
 
 body {
   margin: 10px;
-  background-color: #ffdbbd;
+  background-color: #fde3cd;
 }
 
 header,
 footer {
-  border: 8px double #000000;
+  border: 2px solid #000000;
 }
 
 main {
@@ -37,11 +37,16 @@ main img {
 .item {
   flex: 1;
   margin: 20px;
+  border-radius: 1.5vw;
 }
 
 .item-border {
   padding: 20px;
   border: 2px dotted #000000;
+}
+
+.item-white {
+  background-color: #ffffff;
 }
 
 .item-centered {
@@ -57,16 +62,24 @@ main img {
 }
 
 .divider {
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid #4b71e0;
+  border-bottom: 1px solid #4b71e0;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
+.divider-bottom {
+  border-bottom: 1px solid #4b71e0;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .circle {
   border-radius: 50%;
   border: 3px solid #000000;
+  max-width: 400px;
 }
 
 .links-list {
@@ -88,7 +101,6 @@ nav ul {
   padding-bottom: 0;
   padding-left: 0;
   list-style: none;
-  font-style: normal;
 }
 
 nav ul li a {
@@ -96,6 +108,7 @@ nav ul li a {
   font-size: 16px;
   text-decoration: none;
   margin: 0 20px 0 0;
+  font-style: normal;
 }
 
 nav a:link {
@@ -105,10 +118,10 @@ nav a:visited {
   color: #000000;
 }
 nav a:hover {
-  color: #ffffff;
+  color: #4b71e0;
 }
 nav a:active {
-  color: #0011ff;
+  color: #4b71e0;
 }
 
 /* ----------- TYPOGRAPHY ----------- */
@@ -121,12 +134,10 @@ h6 {
   text-align: center;
 }
 
-h2,
 h4,
 p,
 ul,
-ol,
-a {
+ol {
   font-family: "adobe-garamond-pro", "Times New Roman", serif;
   color: #000000;
   font-weight: 400;
@@ -141,6 +152,9 @@ h1 {
 }
 
 h2 {
+  font-family: "adobe-garamond-pro", "Times New Roman", serif;
+  color: #4b71e0;
+  font-weight: 400;
   font-size: 70px;
   text-align: center;
   margin-top: 30px;
@@ -175,38 +189,58 @@ h6 {
   font-size: 15px;
 }
 
+h7 {
+  font-family: "adobe-garamond-pro", "Times New Roman", serif;
+  color: #4b71e0;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 22px;
+}
+
 p,
 ul,
-ol,
-a {
+ol {
   font-size: 18px;
-  text-align: left;
-  margin-top: 0;
   text-align: justify;
 }
 
 ul {
   font-style: italic;
   padding-left: 20px;
+  margin: 0px;
   list-style: circle;
 }
 
+#about ul {
+  font-style: normal;
+}
+
+a {
+  font-family: "adobe-garamond-pro", "Times New Roman", serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 18px;
+  margin: 5px;
+  text-align: justify;
+}
+
 a:link {
-  color: #000000;
+  color: #4b71e0;
 }
 a:visited {
-  color: #808080;
+  color: #4b71e0;
 }
 a:hover {
-  color: #ffffff;
+  color: #fde3cd;
 }
 a:active {
-  color: #0011ff;
+  color: #fde3cd;
 }
 
 /* ------------ DESKTOP ------------ */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 900px) {
   section {
     padding: 0 8%;
   }
